@@ -1,0 +1,73 @@
+*{
+    margin: 0%;
+  padding: 0;
+}
+
+body{
+    margin: 20px;
+    border: solid 2px black;
+}
+
+#Head-All{
+    text-align: center;
+    align-items: center;
+    height: 10%;
+    width: auto;
+
+}
+.Container-Pacient-data{
+    width: 100%;
+    padding: 10px;
+
+}
+
+.topic{
+    font-size: small;
+    text-align: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background-color: black;
+    height: 2% ;
+    width: 100%;
+}
+
+.box{
+   display: inline-block;
+   
+}
+
+
+
+
+p{
+   
+    font-size: 13.5px;
+}
+
+.data{
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.table{
+    border: solid 2px black;
+}
+
+#half-table{
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+}
+
+td{
+    padding: 2px;
+}
+
+table{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+

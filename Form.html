@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+
+
+    body{
+        background-color: #4d9af3;
+        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    .container{
+        background-color: rgb(255, 255, 255);
+        width: 30%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        justify-content: left;
+        padding-left: 3%;
+        border-radius: 10px;
+        box-shadow: 14px 10px 20px 0px rgba(0,0,0,0.58);
+        
+    }
+
+    label{
+        padding-top: 10%;
+    }
+
+
+    a{
+        text-decoration: none;
+    }
+   
+
+    input[type=text], input[type=tel]{
+        outline: 0;
+        border: 2px solid rgb(201, 198, 198);
+        height: 30px;
+        width: 90%;
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: medium;
+    }
+
+    input[type=text]:focus, input[type=tel]:focus{
+        transition: 0.3s;
+        border: 2px solid #4d9af3;
+        
+    }
+
+
+
+    .button{
+    background-color: #4d9af3; /* Green */
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 40px;
+    border: 0;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px;
+    }
+
+    .button:hover{
+        transition: 0.3s;
+        border: solid 3px #4d9af3;
+        background-color: rgb(255, 255, 255);
+        color:#4d9af3 ;
+        padding: 9px 26px;
+    }
+
+
+    .radio{
+        width: auto;
+        height: auto;
+    }
+
+   img{
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%);
+   width: 200px;
+   }
+
+   .imagem{
+    display: block;
+   }
+
+   select{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    border: 2px solid rgb(201, 198, 198);
+   }
+
+   select:focus{
+
+    border: 2px solid #4d9af3;
+   }
+   
+
+    
+    
+</style>
+
+
+
+
+<body>
+    
+
+    <div class="imagem">
+        <img src="img/ame.png" alt="Logo AME">
+    </div>
+    
+    <div class="container" >
+        <form action="index.php" method="post">
+
+            <br>
+            <br>
+            <Label for="Nome-Paci">1- Nome do paciente</Label>
+            <input type="text" name="NomePaci" id="Nome-Paci" required>
+
+            <Label for="N-Cross">2-Numero Cross </Label>
+            <input type="text" name="NCross" id="N-Cross" required>
+
+            <Label for="cart_nacio">3-Carteira Nacional de Saúde </Label>
+            <input type="text" name="cartNacio" id="cart_nacio" required>
+
+            <Label for="date-nasc">4-Data de nascimento </Label>
+            <input type="text" name="DateNasc" id="date-nasc" required>
+
+            <Label for="sexo">5-Sexo</Label>
+            <input class="radio" type="radio" name="sexo" value="feminino" required>Feminino
+            <input class="radio" type="radio" name="sexo" value = "Masculino" required> Masculino
+
+            <Label for="raca">6-Raça</Label>
+            <select name="raca" required>
+                <option value="Negro">Negro</option>
+                <option value="Branco">Branco</option>
+                <option value="Pardo">Pardo</option>
+                <option value="Amarelo">Amarelo</option>
+                <option value="Indígena">Indígena</option>
+                </select>
+
+            <Label for="MomName">7-Nome da Mãe</Label>
+            <input type="text" name="MomName" id="mom-name" required>
+
+            <Label for="rg">8-RG</Label>
+            <input type="text" name="rg" id="rg" required>
+
+            <Label for="cpf">9-CPF</Label>
+            <div>
+                <input type="text" name="cpf" id="cpf" required>
+            </div class = "spaceInput">
+            
+
+
+
+            <Label for="telefone1">10-telefone</Label>
+            <input type="tel" name="telefone1" id="telefone1" required>
+
+             <Label for="telefone2">11-Outro telefone</Label>
+            <input type="tel" name="telefone2" id="telefone2">
+
+
+
+            <Label for="MunResid">12-Município de residência</Label>
+            <input type="text" name="MunResid" id="mun-resid" required>
+
+            <Label for="estado">13-UF</Label>
+            <select name="estado" required>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+              </select>
+
+              
+              <Label for="cep">14-CEP</Label>
+              <input type="text" name="cep" id="cep" required>
+
+
+              <Label for="adress">15- Endereço(Numero, rua, vila)</Label>
+              <input type="text" name="adress" id="mun-resid" required>
+
+
+              <Label for="CodProcediment">15-Codigo procedimento 1</Label>
+              <input type="text" name="CodProcediment1" id="mun-resid" required>
+
+              <Label for="procedimentName">16-Nome do Procedimento 1</Label>
+              <input type="text" name="procedimentName1" id="mun-resid" required>
+
+              <Label for="qtt1">17-Quantidade</Label>
+              <input type="text" name="qtt1" id="mun-resid" required>
+
+<br>
+              <Label for="CodProcediment2">18-Codigo procedimento 2</Label>
+              <input type="text" name="CodProcediment2" id="mun-resid" >
+
+              <Label for="procedimentName2">19-Nome do Procedimento 2</Label>
+              <input type="text" name="procedimentName2" id="mun-resid" >
+
+              <Label for="qtt2">20-Quantidade</Label>
+              <input type="text" name="qtt2" id="mun-resid" >
+<br>
+
+              <Label for="CodProcediment3">18-Codigo procedimento 3</Label>
+              <input type="text" name="CodProcediment3" id="mun-resid" >
+
+              <Label for="procedimentName3">19-Nome do Procedimento 3</Label>
+              <input type="text" name="procedimentName3" id="mun-resid" >
+
+              <Label for="qtt3">20-Quantidade</Label>
+              <input type="text" name="qtt3" id="mun-resid" >
+
+
+
+
+              <Label for="description">21-Descrição do diagnóstico</Label>
+              <input type="text" name="description" id="mun-resid" >
+
+              <Label for="ProfessionalName">22- Nome do Profissional Solicitante</Label>
+              <input type="text" name="ProfessionalName" id="mun-resid" required>
+
+              <Label for="crm">23- CRM</Label>
+              <input type="text" name="crm" id="mun-resid" required>
+
+              <Label for="hospitExecut">24- Nome do estabelecimento de saúde (Executante)</Label>
+              <input type="text" name="hospitExecut" id="mun-resid" required>
+
+              <Label for="CnesExecut">25- CNES(Executante)</Label>
+              <input type="text" name="CnesExecut" id="mun-resid" required>
+
+
+
+              <a href="../pdf_SADT_AME/">
+                <input class="button" type="submit" value="Gerar pdf">
+                
+              </a>
+
+             
+              <input class="button"  type="reset" value="Redefinir">
+            
+        </form>
+    </div>
+
+
+</body>
+</html>

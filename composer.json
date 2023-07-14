@@ -1,0 +1,19 @@
+{
+    "name": "harlocchi/gerador-pdf-sadt",
+    "description": "Gerador de pdf SADT",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Harlocchi\\GeradorPdfSadt\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gustavo Alves"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^2.0",
+        "twbs/bootstrap": "5.3.0"
+    }
+}
